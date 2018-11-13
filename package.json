@@ -1,0 +1,36 @@
+{
+  "name": "ie11-polyfill",
+  "version": "1.0.0",
+  "description": "A polyfill library for IE 11",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "serve": "http-server dist -p 9000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krabbypattified/ie11-polyfill.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krabbypattified/ie11-polyfill/issues"
+  },
+  "homepage": "https://github.com/krabbypattified/ie11-polyfill#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "babel-loader": "^8.0.4",
+    "bluebird": "^3.5.3",
+    "current-executing-script": "^0.1.3",
+    "http-server": "^0.11.1",
+    "url-polyfill": "^1.1.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "whatwg-fetch": "^3.0.0"
+  }
+}
