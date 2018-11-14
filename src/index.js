@@ -1,5 +1,5 @@
-// Babel polyfill
-if (!window._babelPolyfill) require('@babel/polyfill')
+// fetch
+require('whatwg-fetch')
 
 // document.currentScript
 const currentExecutingScript = require('current-executing-script')
@@ -17,5 +17,5 @@ if ( typeof window.CustomEvent !== "function" ) window.CustomEvent = CustomEvent
 // new URL
 require('url-polyfill')
 
-// fetch
-require('whatwg-fetch')
+// Babel polyfill
+require('@babel/polyfill/noConflict')
