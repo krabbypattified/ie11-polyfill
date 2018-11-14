@@ -4,9 +4,8 @@
   "description": "A polyfill library for IE 11",
   "main": "dist/main.js",
   "scripts": {
-    "start": "webpack --mode development --watch",
-    "build": "webpack --mode production",
-    "serve": "http-server dist -p 9000"
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -20,9 +19,9 @@
   },
   "homepage": "https://github.com/krabbypattified/ie11-polyfill#readme",
   "devDependencies": {
-    "@babel/core": "^7.1.5",
+    "@babel/core": "^7.1.6",
     "@babel/polyfill": "^7.0.0",
-    "@babel/preset-env": "^7.1.5",
+    "@babel/preset-env": "^7.1.6",
     "babel-loader": "^8.0.4",
     "bluebird": "^3.5.3",
     "current-executing-script": "^0.1.3",

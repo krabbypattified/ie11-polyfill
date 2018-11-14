@@ -7,10 +7,9 @@ module.exports = (_, argv) => {
   const dev = argv.mode === 'development'
 
   return {
+    // Dev options
     devtool: dev ? 'cheap-inline-source-map' : false,
     watchOptions: { ignored: '/node_modules/' },
-  
-    // Serve at http://localhost:9000/main.js
     devServer: {
       contentBase: './dist',
       port: 9000,
@@ -18,9 +17,6 @@ module.exports = (_, argv) => {
       host: '0.0.0.0',
       disableHostCheck: true,
     },
-  
-    // Expose environment variables
-    plugins: [new webpack.EnvironmentPlugin(['npm_package_version'])],
   
     module: {
       rules: [
