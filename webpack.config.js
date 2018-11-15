@@ -1,7 +1,3 @@
-const webpack = require('webpack');
-
-const resolve = path => require('path').resolve(__dirname, path);
-
 module.exports = (_, argv) => {
 
   const dev = argv.mode === 'development'
@@ -13,7 +9,7 @@ module.exports = (_, argv) => {
     devServer: {
       contentBase: './dist',
       port: 9000,
-      // Bugfix: Allow testing in Parallels
+      // Bugfix: Allow testing in Parallels. Maybe not needed with POW
       host: '0.0.0.0',
       disableHostCheck: true,
     },
